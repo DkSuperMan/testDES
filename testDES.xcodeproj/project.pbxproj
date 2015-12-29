@@ -15,6 +15,33 @@
 		3C702E9E1C311555002EAD56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C702E9C1C311555002EAD56 /* LaunchScreen.storyboard */; };
 		3C702EA91C311555002EAD56 /* testDESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C702EA81C311555002EAD56 /* testDESTests.m */; };
 		3C702EB41C311555002EAD56 /* testDESUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C702EB31C311555002EAD56 /* testDESUITests.m */; };
+		3C702EC41C311630002EAD56 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C702EC21C311630002EAD56 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C702EC61C31168A002EAD56 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C702EC51C31168A002EAD56 /* Security.framework */; };
+		3CB760B21C3234AC00267884 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B11C3234AC00267884 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3CB760B41C3235EE00267884 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760B31C3235EE00267884 /* SystemConfiguration.framework */; };
+		3CB760D51C326AD300267884 /* SystemServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B71C326AD300267884 /* SystemServices.m */; };
+		3CB760D61C326AD300267884 /* SSAccelerometerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760BA1C326AD300267884 /* SSAccelerometerInfo.m */; };
+		3CB760D71C326AD300267884 /* SSAccessoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760BC1C326AD300267884 /* SSAccessoryInfo.m */; };
+		3CB760D81C326AD300267884 /* SSApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760BE1C326AD300267884 /* SSApplicationInfo.m */; };
+		3CB760D91C326AD300267884 /* SSBatteryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760C01C326AD300267884 /* SSBatteryInfo.m */; };
+		3CB760DA1C326AD300267884 /* SSCarrierInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760C21C326AD300267884 /* SSCarrierInfo.m */; };
+		3CB760DB1C326AD300267884 /* SSDiskInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760C41C326AD300267884 /* SSDiskInfo.m */; };
+		3CB760DC1C326AD300267884 /* SSHardwareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760C61C326AD300267884 /* SSHardwareInfo.m */; };
+		3CB760DD1C326AD300267884 /* SSJailbreakCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760C81C326AD300267884 /* SSJailbreakCheck.m */; };
+		3CB760DE1C326AD300267884 /* SSLocalizationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760CA1C326AD300267884 /* SSLocalizationInfo.m */; };
+		3CB760DF1C326AD300267884 /* SSMemoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760CC1C326AD300267884 /* SSMemoryInfo.m */; };
+		3CB760E01C326AD300267884 /* SSNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760CE1C326AD300267884 /* SSNetworkInfo.m */; };
+		3CB760E11C326AD300267884 /* SSProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760D01C326AD300267884 /* SSProcessInfo.m */; };
+		3CB760E21C326AD300267884 /* SSProcessorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760D21C326AD300267884 /* SSProcessorInfo.m */; };
+		3CB760E31C326AD300267884 /* SSUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760D41C326AD300267884 /* SSUUID.m */; };
+		3CB760E51C326B7500267884 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760E41C326B7500267884 /* ExternalAccessory.framework */; };
+		3CB760E71C326B7E00267884 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760E61C326B7E00267884 /* QuartzCore.framework */; };
+		3CB760E91C326B8700267884 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760E81C326B8700267884 /* CoreText.framework */; };
+		3CB760EB1C326B8C00267884 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760EA1C326B8C00267884 /* CoreTelephony.framework */; };
+		3CB760ED1C326B9300267884 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760EC1C326B9300267884 /* AudioToolbox.framework */; };
+		3CB760EF1C326B9900267884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760EE1C326B9900267884 /* UIKit.framework */; };
+		3CB760F11C326B9F00267884 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760F01C326B9F00267884 /* Foundation.framework */; };
+		3CB760F31C326BA600267884 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760F21C326BA600267884 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +78,53 @@
 		3C702EAF1C311555002EAD56 /* testDESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testDESUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C702EB31C311555002EAD56 /* testDESUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testDESUITests.m; sourceTree = "<group>"; };
 		3C702EB51C311555002EAD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C702EC11C311630002EAD56 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		3C702EC21C311630002EAD56 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		3C702EC31C311630002EAD56 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		3C702EC51C31168A002EAD56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3CB760B01C3234AC00267884 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		3CB760B11C3234AC00267884 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		3CB760B31C3235EE00267884 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3CB760B61C326AD300267884 /* SystemServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemServices.h; sourceTree = "<group>"; };
+		3CB760B71C326AD300267884 /* SystemServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemServices.m; sourceTree = "<group>"; };
+		3CB760B91C326AD300267884 /* SSAccelerometerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAccelerometerInfo.h; sourceTree = "<group>"; };
+		3CB760BA1C326AD300267884 /* SSAccelerometerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAccelerometerInfo.m; sourceTree = "<group>"; };
+		3CB760BB1C326AD300267884 /* SSAccessoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAccessoryInfo.h; sourceTree = "<group>"; };
+		3CB760BC1C326AD300267884 /* SSAccessoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAccessoryInfo.m; sourceTree = "<group>"; };
+		3CB760BD1C326AD300267884 /* SSApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSApplicationInfo.h; sourceTree = "<group>"; };
+		3CB760BE1C326AD300267884 /* SSApplicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSApplicationInfo.m; sourceTree = "<group>"; };
+		3CB760BF1C326AD300267884 /* SSBatteryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBatteryInfo.h; sourceTree = "<group>"; };
+		3CB760C01C326AD300267884 /* SSBatteryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBatteryInfo.m; sourceTree = "<group>"; };
+		3CB760C11C326AD300267884 /* SSCarrierInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCarrierInfo.h; sourceTree = "<group>"; };
+		3CB760C21C326AD300267884 /* SSCarrierInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCarrierInfo.m; sourceTree = "<group>"; };
+		3CB760C31C326AD300267884 /* SSDiskInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDiskInfo.h; sourceTree = "<group>"; };
+		3CB760C41C326AD300267884 /* SSDiskInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDiskInfo.m; sourceTree = "<group>"; };
+		3CB760C51C326AD300267884 /* SSHardwareInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHardwareInfo.h; sourceTree = "<group>"; };
+		3CB760C61C326AD300267884 /* SSHardwareInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHardwareInfo.m; sourceTree = "<group>"; };
+		3CB760C71C326AD300267884 /* SSJailbreakCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSJailbreakCheck.h; sourceTree = "<group>"; };
+		3CB760C81C326AD300267884 /* SSJailbreakCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSJailbreakCheck.m; sourceTree = "<group>"; };
+		3CB760C91C326AD300267884 /* SSLocalizationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLocalizationInfo.h; sourceTree = "<group>"; };
+		3CB760CA1C326AD300267884 /* SSLocalizationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLocalizationInfo.m; sourceTree = "<group>"; };
+		3CB760CB1C326AD300267884 /* SSMemoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSMemoryInfo.h; sourceTree = "<group>"; };
+		3CB760CC1C326AD300267884 /* SSMemoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSMemoryInfo.m; sourceTree = "<group>"; };
+		3CB760CD1C326AD300267884 /* SSNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSNetworkInfo.h; sourceTree = "<group>"; };
+		3CB760CE1C326AD300267884 /* SSNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSNetworkInfo.m; sourceTree = "<group>"; };
+		3CB760CF1C326AD300267884 /* SSProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSProcessInfo.h; sourceTree = "<group>"; };
+		3CB760D01C326AD300267884 /* SSProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSProcessInfo.m; sourceTree = "<group>"; };
+		3CB760D11C326AD300267884 /* SSProcessorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSProcessorInfo.h; sourceTree = "<group>"; };
+		3CB760D21C326AD300267884 /* SSProcessorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSProcessorInfo.m; sourceTree = "<group>"; };
+		3CB760D31C326AD300267884 /* SSUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUUID.h; sourceTree = "<group>"; };
+		3CB760D41C326AD300267884 /* SSUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSUUID.m; sourceTree = "<group>"; };
+		3CB760E41C326B7500267884 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		3CB760E61C326B7E00267884 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CB760E81C326B8700267884 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3CB760EA1C326B8C00267884 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CB760EC1C326B9300267884 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3CB760EE1C326B9900267884 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3CB760F01C326B9F00267884 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CB760F21C326BA600267884 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CB760F41C32709C00267884 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = route.h; path = testDES/route.h; sourceTree = "<group>"; };
+		3CB760F51C3270E400267884 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +132,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB760F31C326BA600267884 /* CoreGraphics.framework in Frameworks */,
+				3CB760F11C326B9F00267884 /* Foundation.framework in Frameworks */,
+				3CB760EF1C326B9900267884 /* UIKit.framework in Frameworks */,
+				3CB760ED1C326B9300267884 /* AudioToolbox.framework in Frameworks */,
+				3CB760EB1C326B8C00267884 /* CoreTelephony.framework in Frameworks */,
+				3CB760E91C326B8700267884 /* CoreText.framework in Frameworks */,
+				3CB760E71C326B7E00267884 /* QuartzCore.framework in Frameworks */,
+				3CB760E51C326B7500267884 /* ExternalAccessory.framework in Frameworks */,
+				3CB760B41C3235EE00267884 /* SystemConfiguration.framework in Frameworks */,
+				3C702EC61C31168A002EAD56 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +165,18 @@
 		3C702E821C311555002EAD56 = {
 			isa = PBXGroup;
 			children = (
+				3CB760F51C3270E400267884 /* PrefixHeader.pch */,
+				3CB760F41C32709C00267884 /* route.h */,
+				3CB760F21C326BA600267884 /* CoreGraphics.framework */,
+				3CB760F01C326B9F00267884 /* Foundation.framework */,
+				3CB760EE1C326B9900267884 /* UIKit.framework */,
+				3CB760EC1C326B9300267884 /* AudioToolbox.framework */,
+				3CB760EA1C326B8C00267884 /* CoreTelephony.framework */,
+				3CB760E81C326B8700267884 /* CoreText.framework */,
+				3CB760E61C326B7E00267884 /* QuartzCore.framework */,
+				3CB760E41C326B7500267884 /* ExternalAccessory.framework */,
+				3CB760B51C326AD300267884 /* System Services */,
+				3CB760B31C3235EE00267884 /* SystemConfiguration.framework */,
 				3C702E8D1C311555002EAD56 /* testDES */,
 				3C702EA71C311555002EAD56 /* testDESTests */,
 				3C702EB21C311555002EAD56 /* testDESUITests */,
@@ -101,6 +197,11 @@
 		3C702E8D1C311555002EAD56 /* testDES */ = {
 			isa = PBXGroup;
 			children = (
+				3CB760B01C3234AC00267884 /* OpenUDID.h */,
+				3CB760B11C3234AC00267884 /* OpenUDID.m */,
+				3C702EC11C311630002EAD56 /* GTMBase64.h */,
+				3C702EC21C311630002EAD56 /* GTMBase64.m */,
+				3C702EC31C311630002EAD56 /* GTMDefines.h */,
 				3C702E911C311555002EAD56 /* AppDelegate.h */,
 				3C702E921C311555002EAD56 /* AppDelegate.m */,
 				3C702E941C311555002EAD56 /* ViewController.h */,
@@ -109,6 +210,7 @@
 				3C702E9A1C311555002EAD56 /* Assets.xcassets */,
 				3C702E9C1C311555002EAD56 /* LaunchScreen.storyboard */,
 				3C702E9F1C311555002EAD56 /* Info.plist */,
+				3C702EC51C31168A002EAD56 /* Security.framework */,
 				3C702E8E1C311555002EAD56 /* Supporting Files */,
 			);
 			path = testDES;
@@ -138,6 +240,52 @@
 				3C702EB51C311555002EAD56 /* Info.plist */,
 			);
 			path = testDESUITests;
+			sourceTree = "<group>";
+		};
+		3CB760B51C326AD300267884 /* System Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CB760B61C326AD300267884 /* SystemServices.h */,
+				3CB760B71C326AD300267884 /* SystemServices.m */,
+				3CB760B81C326AD300267884 /* Utilities */,
+			);
+			name = "System Services";
+			path = "testDES/System Services";
+			sourceTree = "<group>";
+		};
+		3CB760B81C326AD300267884 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3CB760B91C326AD300267884 /* SSAccelerometerInfo.h */,
+				3CB760BA1C326AD300267884 /* SSAccelerometerInfo.m */,
+				3CB760BB1C326AD300267884 /* SSAccessoryInfo.h */,
+				3CB760BC1C326AD300267884 /* SSAccessoryInfo.m */,
+				3CB760BD1C326AD300267884 /* SSApplicationInfo.h */,
+				3CB760BE1C326AD300267884 /* SSApplicationInfo.m */,
+				3CB760BF1C326AD300267884 /* SSBatteryInfo.h */,
+				3CB760C01C326AD300267884 /* SSBatteryInfo.m */,
+				3CB760C11C326AD300267884 /* SSCarrierInfo.h */,
+				3CB760C21C326AD300267884 /* SSCarrierInfo.m */,
+				3CB760C31C326AD300267884 /* SSDiskInfo.h */,
+				3CB760C41C326AD300267884 /* SSDiskInfo.m */,
+				3CB760C51C326AD300267884 /* SSHardwareInfo.h */,
+				3CB760C61C326AD300267884 /* SSHardwareInfo.m */,
+				3CB760C71C326AD300267884 /* SSJailbreakCheck.h */,
+				3CB760C81C326AD300267884 /* SSJailbreakCheck.m */,
+				3CB760C91C326AD300267884 /* SSLocalizationInfo.h */,
+				3CB760CA1C326AD300267884 /* SSLocalizationInfo.m */,
+				3CB760CB1C326AD300267884 /* SSMemoryInfo.h */,
+				3CB760CC1C326AD300267884 /* SSMemoryInfo.m */,
+				3CB760CD1C326AD300267884 /* SSNetworkInfo.h */,
+				3CB760CE1C326AD300267884 /* SSNetworkInfo.m */,
+				3CB760CF1C326AD300267884 /* SSProcessInfo.h */,
+				3CB760D01C326AD300267884 /* SSProcessInfo.m */,
+				3CB760D11C326AD300267884 /* SSProcessorInfo.h */,
+				3CB760D21C326AD300267884 /* SSProcessorInfo.m */,
+				3CB760D31C326AD300267884 /* SSUUID.h */,
+				3CB760D41C326AD300267884 /* SSUUID.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +355,7 @@
 				TargetAttributes = {
 					3C702E8A1C311555002EAD56 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CR4Q6WNP9D;
 					};
 					3C702EA31C311555002EAD56 = {
 						CreatedOnToolsVersion = 7.2;
@@ -272,7 +421,24 @@
 			files = (
 				3C702E961C311555002EAD56 /* ViewController.m in Sources */,
 				3C702E931C311555002EAD56 /* AppDelegate.m in Sources */,
+				3CB760DD1C326AD300267884 /* SSJailbreakCheck.m in Sources */,
+				3CB760DA1C326AD300267884 /* SSCarrierInfo.m in Sources */,
+				3CB760DF1C326AD300267884 /* SSMemoryInfo.m in Sources */,
+				3CB760E11C326AD300267884 /* SSProcessInfo.m in Sources */,
+				3CB760D71C326AD300267884 /* SSAccessoryInfo.m in Sources */,
+				3CB760E01C326AD300267884 /* SSNetworkInfo.m in Sources */,
+				3CB760E31C326AD300267884 /* SSUUID.m in Sources */,
+				3CB760DE1C326AD300267884 /* SSLocalizationInfo.m in Sources */,
+				3CB760E21C326AD300267884 /* SSProcessorInfo.m in Sources */,
+				3CB760DC1C326AD300267884 /* SSHardwareInfo.m in Sources */,
+				3CB760DB1C326AD300267884 /* SSDiskInfo.m in Sources */,
+				3CB760D61C326AD300267884 /* SSAccelerometerInfo.m in Sources */,
+				3CB760D51C326AD300267884 /* SystemServices.m in Sources */,
+				3CB760D81C326AD300267884 /* SSApplicationInfo.m in Sources */,
 				3C702E901C311555002EAD56 /* main.m in Sources */,
+				3C702EC41C311630002EAD56 /* GTMBase64.m in Sources */,
+				3CB760B21C3234AC00267884 /* OpenUDID.m in Sources */,
+				3CB760D91C326AD300267884 /* SSBatteryInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +577,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/net ";
 				INFOPLIST_FILE = testDES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jin.developer.testDES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +594,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/net ";
 				INFOPLIST_FILE = testDES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jin.developer.testDES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +674,7 @@
 				3C702EBA1C311555002EAD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C702EBB1C311555002EAD56 /* Build configuration list for PBXNativeTarget "testDESTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +683,7 @@
 				3C702EBD1C311555002EAD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C702EBE1C311555002EAD56 /* Build configuration list for PBXNativeTarget "testDESUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +692,7 @@
 				3C702EC01C311555002EAD56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
