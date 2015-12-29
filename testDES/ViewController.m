@@ -62,7 +62,7 @@
 
 - (void)testDes
 {
-    NSString* test1 = @"LHn0y+BOAjuU4eUyh865aBmD6cMI8QOpUEu0gL0TLQPk4LKoW1mnLL6Ah8JsrOO0QssMgXAnBkqmkOuJOAbJ63kEbbdJdpTaB7iQrajjxgdESe03OV1TJTPl1e7Y0UFGUG1fP6lRYESZxgml2YQ8Avhjhi6lB6euKaLrw7XYnlRx2vwEEOJnAgord+lCCBVMk9bm9NWpQ0WyBOasuhJgY9PsOBKmqYZrXiZX766ltN2QrJOX0n3ywvOrWDmN9USFxc/N53brymikNIROrui1hMZYYZSx4tAXobzc7HSqhOLZLu6NXYzbrpiNUEY13VnXsYR2byrorN7r9enxE2QriUj05dLoQ5udnPSeZyS0qntQKOhFSMREIc79czSKGDezPqf+9uDQADQEfw8XdNXxmQk7Oe4lDXAwoSA6X4cr1+LfbGJ+dHZ7JTWsZZv+sq//Dv3tuaNRITd3c9Fqyu1FPCeMpLE+V+UNBibtgg3yz4k=";
+    NSString* test1 = @"LHn0y+BOAjuU4eUyh865aBmD6cMI8QOpUEu0gL0TLQPk4LKoW1mnLL6Ah8JsrOO0QssMgXAnBkqmkOuJOAbJ6x3SzxbqlMT4";
     
     test1 = [self decryptUseDES:test1 key:@"0dxwLxO8"];
     
