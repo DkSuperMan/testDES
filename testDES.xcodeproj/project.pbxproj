@@ -17,6 +17,9 @@
 		3C702EB41C311555002EAD56 /* testDESUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C702EB31C311555002EAD56 /* testDESUITests.m */; };
 		3C702EC41C311630002EAD56 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C702EC21C311630002EAD56 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3C702EC61C31168A002EAD56 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C702EC51C31168A002EAD56 /* Security.framework */; };
+		3C7181FB1C34B88B0007995D /* ELLIOKitDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7181F81C34B88B0007995D /* ELLIOKitDumper.m */; };
+		3C7181FC1C34B88B0007995D /* ELLIOKitNodeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7181FA1C34B88B0007995D /* ELLIOKitNodeInfo.m */; };
+		3CB2617F1C34BCF9002E887F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB2617E1C34BCF9002E887F /* IOKit.framework */; };
 		3CB760B21C3234AC00267884 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B11C3234AC00267884 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CB760B41C3235EE00267884 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760B31C3235EE00267884 /* SystemConfiguration.framework */; };
 		3CB760D51C326AD300267884 /* SystemServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B71C326AD300267884 /* SystemServices.m */; };
@@ -82,6 +85,11 @@
 		3C702EC21C311630002EAD56 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		3C702EC31C311630002EAD56 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		3C702EC51C31168A002EAD56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3C7181F71C34B88B0007995D /* ELLIOKitDumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLIOKitDumper.h; sourceTree = "<group>"; };
+		3C7181F81C34B88B0007995D /* ELLIOKitDumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLIOKitDumper.m; sourceTree = "<group>"; };
+		3C7181F91C34B88B0007995D /* ELLIOKitNodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLIOKitNodeInfo.h; sourceTree = "<group>"; };
+		3C7181FA1C34B88B0007995D /* ELLIOKitNodeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLIOKitNodeInfo.m; sourceTree = "<group>"; };
+		3CB2617E1C34BCF9002E887F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		3CB760B01C3234AC00267884 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		3CB760B11C3234AC00267884 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		3CB760B31C3235EE00267884 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -123,8 +131,8 @@
 		3CB760EE1C326B9900267884 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3CB760F01C326B9F00267884 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CB760F21C326BA600267884 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3CB760F41C32709C00267884 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = route.h; path = testDES/route.h; sourceTree = "<group>"; };
-		3CB760F51C3270E400267884 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3CB760F41C32709C00267884 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		3CB760F51C3270E400267884 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 			files = (
 				3CB760F31C326BA600267884 /* CoreGraphics.framework in Frameworks */,
 				3CB760F11C326B9F00267884 /* Foundation.framework in Frameworks */,
+				3CB2617F1C34BCF9002E887F /* IOKit.framework in Frameworks */,
 				3CB760EF1C326B9900267884 /* UIKit.framework in Frameworks */,
 				3CB760ED1C326B9300267884 /* AudioToolbox.framework in Frameworks */,
 				3CB760EB1C326B8C00267884 /* CoreTelephony.framework in Frameworks */,
@@ -165,18 +174,6 @@
 		3C702E821C311555002EAD56 = {
 			isa = PBXGroup;
 			children = (
-				3CB760F51C3270E400267884 /* PrefixHeader.pch */,
-				3CB760F41C32709C00267884 /* route.h */,
-				3CB760F21C326BA600267884 /* CoreGraphics.framework */,
-				3CB760F01C326B9F00267884 /* Foundation.framework */,
-				3CB760EE1C326B9900267884 /* UIKit.framework */,
-				3CB760EC1C326B9300267884 /* AudioToolbox.framework */,
-				3CB760EA1C326B8C00267884 /* CoreTelephony.framework */,
-				3CB760E81C326B8700267884 /* CoreText.framework */,
-				3CB760E61C326B7E00267884 /* QuartzCore.framework */,
-				3CB760E41C326B7500267884 /* ExternalAccessory.framework */,
-				3CB760B51C326AD300267884 /* System Services */,
-				3CB760B31C3235EE00267884 /* SystemConfiguration.framework */,
 				3C702E8D1C311555002EAD56 /* testDES */,
 				3C702EA71C311555002EAD56 /* testDESTests */,
 				3C702EB21C311555002EAD56 /* testDESUITests */,
@@ -197,6 +194,13 @@
 		3C702E8D1C311555002EAD56 /* testDES */ = {
 			isa = PBXGroup;
 			children = (
+				3C7181F71C34B88B0007995D /* ELLIOKitDumper.h */,
+				3C7181F81C34B88B0007995D /* ELLIOKitDumper.m */,
+				3C7181F91C34B88B0007995D /* ELLIOKitNodeInfo.h */,
+				3C7181FA1C34B88B0007995D /* ELLIOKitNodeInfo.m */,
+				3CB760B51C326AD300267884 /* System Services */,
+				3CB760F51C3270E400267884 /* PrefixHeader.pch */,
+				3CB760F41C32709C00267884 /* route.h */,
 				3CB760B01C3234AC00267884 /* OpenUDID.h */,
 				3CB760B11C3234AC00267884 /* OpenUDID.m */,
 				3C702EC11C311630002EAD56 /* GTMBase64.h */,
@@ -210,7 +214,6 @@
 				3C702E9A1C311555002EAD56 /* Assets.xcassets */,
 				3C702E9C1C311555002EAD56 /* LaunchScreen.storyboard */,
 				3C702E9F1C311555002EAD56 /* Info.plist */,
-				3C702EC51C31168A002EAD56 /* Security.framework */,
 				3C702E8E1C311555002EAD56 /* Supporting Files */,
 			);
 			path = testDES;
@@ -219,6 +222,17 @@
 		3C702E8E1C311555002EAD56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3CB2617E1C34BCF9002E887F /* IOKit.framework */,
+				3C702EC51C31168A002EAD56 /* Security.framework */,
+				3CB760B31C3235EE00267884 /* SystemConfiguration.framework */,
+				3CB760F21C326BA600267884 /* CoreGraphics.framework */,
+				3CB760F01C326B9F00267884 /* Foundation.framework */,
+				3CB760EE1C326B9900267884 /* UIKit.framework */,
+				3CB760EC1C326B9300267884 /* AudioToolbox.framework */,
+				3CB760EA1C326B8C00267884 /* CoreTelephony.framework */,
+				3CB760E81C326B8700267884 /* CoreText.framework */,
+				3CB760E61C326B7E00267884 /* QuartzCore.framework */,
+				3CB760E41C326B7500267884 /* ExternalAccessory.framework */,
 				3C702E8F1C311555002EAD56 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -249,8 +263,7 @@
 				3CB760B71C326AD300267884 /* SystemServices.m */,
 				3CB760B81C326AD300267884 /* Utilities */,
 			);
-			name = "System Services";
-			path = "testDES/System Services";
+			path = "System Services";
 			sourceTree = "<group>";
 		};
 		3CB760B81C326AD300267884 /* Utilities */ = {
@@ -421,6 +434,7 @@
 			files = (
 				3C702E961C311555002EAD56 /* ViewController.m in Sources */,
 				3C702E931C311555002EAD56 /* AppDelegate.m in Sources */,
+				3C7181FB1C34B88B0007995D /* ELLIOKitDumper.m in Sources */,
 				3CB760DD1C326AD300267884 /* SSJailbreakCheck.m in Sources */,
 				3CB760DA1C326AD300267884 /* SSCarrierInfo.m in Sources */,
 				3CB760DF1C326AD300267884 /* SSMemoryInfo.m in Sources */,
@@ -438,6 +452,7 @@
 				3C702E901C311555002EAD56 /* main.m in Sources */,
 				3C702EC41C311630002EAD56 /* GTMBase64.m in Sources */,
 				3CB760B21C3234AC00267884 /* OpenUDID.m in Sources */,
+				3C7181FC1C34B88B0007995D /* ELLIOKitNodeInfo.m in Sources */,
 				3CB760D91C326AD300267884 /* SSBatteryInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
