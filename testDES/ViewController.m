@@ -14,6 +14,7 @@
 #import "SSDiskInfo.h"
 #import "SystemServices.h"
 #import <dlfcn.h>
+#import <AdSupport/AdSupport.h>
 
 @interface ViewController ()
 @property(strong, nonatomic) NSString *bs;
@@ -43,7 +44,10 @@
     
     [self fetchBattery];
     
-//    NSLog(@"longDiskSpace is %lld",[[SystemServices sharedServices] serialNumberDescription]);
+    NSString *adid = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
+    NSLog(@"adId is %@ idfv is %@",adid,idfv);
     
 }
 

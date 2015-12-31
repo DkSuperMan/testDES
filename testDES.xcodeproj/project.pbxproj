@@ -20,6 +20,7 @@
 		3C7181FB1C34B88B0007995D /* ELLIOKitDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7181F81C34B88B0007995D /* ELLIOKitDumper.m */; };
 		3C7181FC1C34B88B0007995D /* ELLIOKitNodeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7181FA1C34B88B0007995D /* ELLIOKitNodeInfo.m */; };
 		3CB2617F1C34BCF9002E887F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB2617E1C34BCF9002E887F /* IOKit.framework */; };
+		3CB261811C34D125002E887F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB261801C34D125002E887F /* AdSupport.framework */; };
 		3CB760B21C3234AC00267884 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B11C3234AC00267884 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3CB760B41C3235EE00267884 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB760B31C3235EE00267884 /* SystemConfiguration.framework */; };
 		3CB760D51C326AD300267884 /* SystemServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB760B71C326AD300267884 /* SystemServices.m */; };
@@ -90,6 +91,7 @@
 		3C7181F91C34B88B0007995D /* ELLIOKitNodeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLIOKitNodeInfo.h; sourceTree = "<group>"; };
 		3C7181FA1C34B88B0007995D /* ELLIOKitNodeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLIOKitNodeInfo.m; sourceTree = "<group>"; };
 		3CB2617E1C34BCF9002E887F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		3CB261801C34D125002E887F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		3CB760B01C3234AC00267884 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		3CB760B11C3234AC00267884 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		3CB760B31C3235EE00267884 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -140,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB261811C34D125002E887F /* AdSupport.framework in Frameworks */,
 				3CB760F31C326BA600267884 /* CoreGraphics.framework in Frameworks */,
 				3CB760F11C326B9F00267884 /* Foundation.framework in Frameworks */,
 				3CB2617F1C34BCF9002E887F /* IOKit.framework in Frameworks */,
@@ -222,6 +225,7 @@
 		3C702E8E1C311555002EAD56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3CB261801C34D125002E887F /* AdSupport.framework */,
 				3CB2617E1C34BCF9002E887F /* IOKit.framework */,
 				3C702EC51C31168A002EAD56 /* Security.framework */,
 				3CB760B31C3235EE00267884 /* SystemConfiguration.framework */,
