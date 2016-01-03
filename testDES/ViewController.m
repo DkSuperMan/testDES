@@ -26,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //[self testDes];
+    [self testDes];
     
     
     
@@ -178,7 +178,7 @@
 
 - (void)testDes
 {
-    NSString* test1 = @"LHn0y+BOAjuBmtUiOf/NL7opeUQI+j2LYl+DxJmLSyS+kk9voeYIqMMovUNJsoJPWEJh9+oU/PlyC207d9t1EG9BRP5er3Qc+e1j9AGoO3PuKBm/ZoGiFbTkOkXdcVZSMqXCjUjOqqbw3puXppxstdjEl87AHtr9Gxb/DxK6qL0CAReKSQNYkBs2N/SG+7MuW/9QO34HUvHM/2vIqpPsN4zSXko1NAFUxXp0+0DAT9PmSpLFacmkWR9U5f+5YjZbg5bwDiBgAQKV+UBT1FvfVkoyk+9cVWfdN7ZYyXpkC/Ih0V/z+FmzdKjKPY6FGA/oAJA3hGPUstt4qHPeOBhVHzGHO0dHduabVk6G0kvEJfnzLsIY55s9UkrA/zILwWDVKW1QV6j9dg1/e5wvqkAYn30POuU+1l5J5Opl0ioPUOTDEHDERuoY/oyG9ojXNArd1rIrXbZyLIqfL67ycVisCzThubfWpC4j3LD/5gC50P7PEtT6LXUA0h7lfIN4haxVWi8oTf5RnjFivV4iJxiVIZSxpPfRMbqnx1rak0CKrzw=";
+    NSString* test1 = @"LHn0y+BOAjtK3Bj6fs3FOmkP131GiODuiq4nmILaf/amh2q6uKvgIuVubXVAHZX97EX7JKSbHbtAIWiGJE/2GRPe+DpPGCvVnASzVD7AEKsPJgihvjSNzQ+K7fP+B8DwFNyC6ku2+ZAaqrWaMV7kg2D8riE8+0SljShOjFYA4bJMFfFeC4kh7NB1XPfbtojqVDNDmLHj/vEQS8m3GcS9QizrhbQp7FCitOv03MFkcFXCAa9I50/5wOT6CpGhgXm/T7NG3vQBRxC5FtMjI13TSwBk0TzXlJrux4m9ajQYGrtofbE6XsRzBfRwQA/D6pY+BqcvhfD4tpiYCoDlClcSwif1bAZ7cG05+TqSBU1+Ty4HdCEvJw3twNOthvHXVTHZDw5e1bWVEdapygelfuDBnhiUKV+O1lJ4qtiiBVQWKmz2gLCvM4pzvKl+OGXwlvnhzTcb6mQazQUyTmi5q8Le6506wtTKTSPlMvATMpdhb/cOnPVGswrnDNeQg9EUve6Da34NQj51YuB70YqoKe/yFRNE+0gigqm0UQh4ONcDxBU=";
     
     test1 = [self decryptUseDES:test1 key:@"0dxwLxO8"];
     
