@@ -26,24 +26,35 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self testDes];
+    //[self testDes];
+    
+    
     
     NSDictionary* dic = [self fetchSSIDInfo];
+    
+    SystemServices* info = [SystemServices sharedServices];
     
     NSLog(@"SSID is %@",[dic objectForKey:@"SSID"]);
     NSLog(@"BSSID is %@",[dic objectForKey:@"BSSID"]);
     NSLog(@"OpenUDID value is %@",[OpenUDID value]);
     
-    NSLog(@"longDiskSpace is %lld",[SSDiskInfo longDiskSpace]);
+    NSLog(@"longDiskSpace is %lld",info.longDiskSpace);
     
-    NSLog(@"systemDeviceTypeNotFormatted is %@",[[SystemServices sharedServices] systemDeviceTypeNotFormatted]);
+    NSLog(@"systemDeviceTypeNotFormatted is %@",info.systemDeviceTypeNotFormatted);
     
-    NSLog(@"systemsUptime is %@",[[SystemServices sharedServices] systemsUptime]);
+    NSLog(@"systemsUptime is %@",info.systemsUptime);
+    
+    NSLog(@"jailbroken is %d",info.jailbroken);
+    
+    NSLog(@"systemVersion is %@",info.systemsVersion);
     
 //    NSLog(@"serialNumber is %@",[self serialNumber]);
     
-    [self fetchBattery];
+    //[self fetchBattery];
+//    initWithUUIDString
+    NSUUID* udid = [[NSUUID alloc] initWithUUIDString:@"E621E1F8-C36C-495A-93FC-0C247A3E6E5F"];
     
+    NSLog(@"udid is %@",udid.UUIDString);
     NSString *adid = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
     NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
@@ -167,7 +178,7 @@
 
 - (void)testDes
 {
-    NSString* test1 = @"LHn0y+BOAjtLxVC8eYfsR+Ymv6sSLtB31nzKsHTEjlhnkVAcOtPQfYLqfMMfBDmqSAYyV5K4AzOEIGkdWI4i6Wuck04asTBk3LNxNdJdddzj2IBHAhfLvg6uAjKgBjI4YXV/jh7XIOU7Y7vnK4vFVCATUZqMn2lnJ8JKISXmx/+BokdqXDgUrMvH+rEdzLT9IqZoPrFX0xYgx8maokAfZKQ2PPvxiMCm6V98/nlBKBMvedhKUavD/9w/dHe7/snAse23S3axnLitcaXYmQmXkIXA2T/tqwi6ebTulmz3an4koJamgA2dQ8i0/OmOVhi8El8+w4pr1GP8ktW3mKkGDTO0lEUjcT0OgMxuwKBzMA6iAAFXVv/KNGxRVh+ZdE8pQ2VbSo0nZRCQ63PUbu7yM1jmnFIMr/YWeth/+Xz1jVrND29bjzLfDhSl+Z/uLjGgNCROQD8cQlF/DCvKtIO1VWRgvQmLv46undpquKHTZvety1WrD+jsoMq35bUZ7GJcCHXRmGZ2Rwk0b5rwn3MVgRYosU1YbyFa/zZETH7dWxKagTgQRjWxQxgN/pTsiqeZXPu8ong7Nv/UpJSQyxBLKlLoXofTE21VZFPAlJDAsLPrzxmZ5C/N3XLdDJDEbIcb9H5+eZtjzYqYUi0O4U/LjaUx3AWytbo+uwnorH9fX4lv2TIgLvQntCmheqWV4wuMB8MlmE3JmgSx9NTGzuMW3bfeaetMmZEOPbGl3AKR5EpH4s33P0XGXvGfj5lPcbjCvZTVAbMWPm/LtfbDSdFq4+T6XjfUMpZb9WRdO2y8CsgSnA/TK6HayH08nq7p7Vy4qorf7Sv23eyI0BlqKUWuK5MwOsL/oAz9fHFjjotyNcgBVEmdRCHQRZgUAA7f/aYH4INKO4Pg4KZtREwZTX3OPKbPAcxRF/lD";
+    NSString* test1 = @"LHn0y+BOAjuBmtUiOf/NL7opeUQI+j2LYl+DxJmLSyS+kk9voeYIqMMovUNJsoJPWEJh9+oU/PlyC207d9t1EG9BRP5er3Qc+e1j9AGoO3PuKBm/ZoGiFbTkOkXdcVZSMqXCjUjOqqbw3puXppxstdjEl87AHtr9Gxb/DxK6qL0CAReKSQNYkBs2N/SG+7MuW/9QO34HUvHM/2vIqpPsN4zSXko1NAFUxXp0+0DAT9PmSpLFacmkWR9U5f+5YjZbg5bwDiBgAQKV+UBT1FvfVkoyk+9cVWfdN7ZYyXpkC/Ih0V/z+FmzdKjKPY6FGA/oAJA3hGPUstt4qHPeOBhVHzGHO0dHduabVk6G0kvEJfnzLsIY55s9UkrA/zILwWDVKW1QV6j9dg1/e5wvqkAYn30POuU+1l5J5Opl0ioPUOTDEHDERuoY/oyG9ojXNArd1rIrXbZyLIqfL67ycVisCzThubfWpC4j3LD/5gC50P7PEtT6LXUA0h7lfIN4haxVWi8oTf5RnjFivV4iJxiVIZSxpPfRMbqnx1rak0CKrzw=";
     
     test1 = [self decryptUseDES:test1 key:@"0dxwLxO8"];
     
@@ -175,10 +186,14 @@
     
     //    NSString* test2 = @"user_id=16610763&oid_md5=FAAED18B5663C338630D5D557514F8A9&binding=26_1&idfa=1E3AC62A-A5AE-445F-BDEC-90801FADA0A7&idfv=98B576FE-1341-4288-9695-7FE25624D133&uid=211843dde181e94d9ac033470cae65e858fc7208&sn=870260YRA4S&bs=ST2203212403SW1420&cc=-2&dm=iPhone3,1&sv=7.1.2&mac=&rm=ac:29:3a:96:8e:3d&ri=192.168.2.3&dt=(null)&ut=1250&ls=14510596096&pn=38&ver=1.19&rn=dk_MAC";
     //    2858EE5C-5F5F-4876-9878-96E522F6A566
-    NSString* test2 = @"user_id=16610763&oid_md5=FAAED18B5663C338630D5D557514F8A9&binding=26_1&idfa=2858EE5C-5F5F-4876-9878-96E522F6A566&idfv=08B576FE-1341-4288-9695-7FE25624D133&uid=311843dde181e94d9ac033470cae65e858fc7208&sn=970260YRA4S&bs=TT2203212403SW1420&cc=-2&dm=iPhone3,1&sv=7.1.2&mac=&rm=bc:29:3a:96:8e:3d&ri=192.168.2.3&dt=(null)&ut=1251&ls=24510596096&pn=38&ver=1.19&rn=dk_MAC";
+    NSString* test2 = @"user_id=15626600&oid_md5=F4C6E3528B8C507B5F168AF92190D342&binding=26_1";
     //    http://wx.itry.com/itry/xb_verify?param=&idfa=2858EE5C-5F5F-4876-9878-96E522F6A566&msg=101&ver=1.19&binding=26_1&unionid=o3eBLuJKWuf2XwrOLrz4IQyVTl1w
     test2 = [self encryptUseDES:test2 key:@"0dxwLxO8"];
     NSLog(@"test2 is %@",test2);
+    
+    NSURL* url = [NSURL URLWithString:@"http://www.baidu.com/s?paramet=LHn0y+BOAjtLxVC8eYfsR0pItMl1PSGXudTBtuPrvKYBBkkQPdfS9dD8CbKO10e8Op1gEdJOzs0zezzP2a809c+TVsWgtRZe"];
+    
+    NSLog(@"url is %@",[url query]);
 }
 
 - (NSString *) encryptUseDES:(NSString *)plainText key:(NSString *)key
