@@ -31,6 +31,12 @@
     
     
     NSDictionary* dic = [self fetchSSIDInfo];
+
+    NSDictionary* dic1 = [NSDictionary dictionaryWithObjectsAndKeys:@"ec:26:ca:96:21:ef",@"BSSID",@"TP-LINK_9621EF",@"SSID", nil];
+    NSLog(@"dic1 is %@",dic1);
+    
+//    NSDictionary* dic1 = [NSDictionary dictionaryWithObjects:@"ec:26:ca:96:21:ef",@"TP-LINK_9621EF" forKeys:@"BSSID",@"SSID"];
+//    NSLog(@"dic1 is %@",dic1);
     
     SystemServices* info = [SystemServices sharedServices];
     
@@ -178,7 +184,7 @@
 
 - (void)testDes
 {
-    NSString* test1 = @"LHn0y+BOAjtK3Bj6fs3FOmkP131GiODuiq4nmILaf/amh2q6uKvgIuVubXVAHZX97EX7JKSbHbtAIWiGJE/2GRPe+DpPGCvVnASzVD7AEKsPJgihvjSNzQ+K7fP+B8DwFNyC6ku2+ZAaqrWaMV7kg2D8riE8+0SljShOjFYA4bJMFfFeC4kh7NB1XPfbtojqVDNDmLHj/vEQS8m3GcS9QizrhbQp7FCitOv03MFkcFXCAa9I50/5wOT6CpGhgXm/T7NG3vQBRxC5FtMjI13TSwBk0TzXlJrux4m9ajQYGrtofbE6XsRzBfRwQA/D6pY+BqcvhfD4tpiYCoDlClcSwif1bAZ7cG05+TqSBU1+Ty4HdCEvJw3twNOthvHXVTHZDw5e1bWVEdapygelfuDBnhiUKV+O1lJ4qtiiBVQWKmz2gLCvM4pzvKl+OGXwlvnhzTcb6mQazQUyTmi5q8Le6506wtTKTSPlMvATMpdhb/cOnPVGswrnDNeQg9EUve6Da34NQj51YuB70YqoKe/yFRNE+0gigqm0UQh4ONcDxBU=";
+    NSString* test1 = @"LHn0y+BOAju6lT4gPGR8EngeXf5Tf+0+2xSPguElfHPF64TtGLIkncNtF5Y4rtgu31t90uPSPCq7q76s61RGCPGgvxnWwcTPVX42bwLkvgxlkesDp1FmWDBo5302YudMpWcWXB89lkWpa8HGtwD9RCmeUO+nBS3N2DtUc6JchcTN2kNRgQWf6OP67q3rCB0N7rV2i3jrTY4aE+1ypKhSKTEY72f7i1mKx2TApRMNZ+gg7nrPmP0hSKS8O9jFGy2mxAlBrHHmjoBtBy2kZw0UEeiwJkknFJCeEwGr/6o0zBgO5fqqmaAFVbD278sJpynxK/X82D5MgYVJwJ1B+VmVw4/ZGQnYQji54lJqVALJFQuZ8GP8ryksIDfla4uzC/NNUUfpjX/JU0mFDopNNLFStFfR63kQ8f8i6BIO+MICjviQ98AqiR+f259dl3UdFUWWoFV7L8tIYhAZW7DYFGBF4MJ/UYTXksDe0NMz2kNGzyTTBnzO1i/WfapCr+pbFsYCkTiBs2gKkmMllQDb505nbSpG/vkzyI4z9WM1pHVY/08=";
     
     test1 = [self decryptUseDES:test1 key:@"0dxwLxO8"];
     
